@@ -1,0 +1,72 @@
+/* Common Styles for both Farmer and Buyer login forms */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/142/480/original/WhatsApp_Image_2024-09-08_at_12.52.42_AM.jpeg?1725737143');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;
+        padding: 15px;
+    }
+}

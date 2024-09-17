@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>byer-dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-adress">
+                <p class="deliver">deliver to</p>
+                <div class="add-icon"> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="India">India</p> 
+                </div>
+            </div>
+
+            <div class="search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder=" Search AgriBond" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <a href="index.html " class="home border">
+                Home
+            </a>
+
+            <div class="return border">
+                <a href="terms.html" target="main"><p><span>Contract</span></p>
+                <p class="order">& Condition</p>
+                </a>
+            </div>
+
+            <!-- New Dropdown Menu -->
+            <div class="dropdown border">
+                <div class="dropbtn"><i class="fa-solid fa-bars"></i> All</div>
+                <div class="dropdown-content">
+                    <a href="#">How It Works</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+    <div class="msg">
+        <h1>Welcome to your Dashboard, <span id="usernameDisplay"></span>!</h1>
+
+    </div>
+</div>
+<div class="headline">
+    <h1>Empower Your Business with Direct Contracts</h1>
+</div>
+<div class="shop">
+    <div class="box1 box">
+        <div class="box-content">
+            <h2>Fruits</h2>
+            <a href="fruits.html" class="image-button">
+                <div class="box-img" style="background-image:url('/img/fruits.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="box2 box">
+        <div class="box-content">
+            <h2>Pulses/Legumes</h2>
+            <a href="legumes-page.html" class="image-button">
+                <div class="box-img" style="background-image:url('https://images.cnbctv18.com/wp-content/uploads/2023/09/pulses-300x169.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="box3 box">
+        <div class="box-content">
+            <h2>Vegetable</h2>
+            <a href="vegetable.html" class="image-button">
+                <div class="box-img" style="background-image:url('/img/vegetable.jpg');"></div>
+            </a>
+         
+        </div>
+    </div>
+    <div class="box4 box">
+        <div class="box-content">
+            <h2>Spices and Herbs</h2>
+            <a href="spices.html" class="image-button">
+                <div class="box-img" style="background-image:url('/img/spices.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="box1 box">
+        <div class="box-content">
+            <h2>Cash Crops</h2>
+            <a href="cash-crops-page.html" class="image-button">
+                <div class="box-img" style="background-image:url('https://kj1bcdn.b-cdn.net/media/51582/shutterstock-738008380.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="box2 box">
+        <div class="box-content">
+            <h2>Kharif Crops</h2>
+            <a href="kharif.html" class="image-button">
+                <div class="box-img" style="background-image:url('https://agriculturepost.com/wp-content/uploads/2020/09/What-1st-Advance-Estimates-say-about-production-of-major-Kharif-crops-1.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="box3 box">
+        <div class="box-content">
+            <h2>Rabi Crops</h2>
+            <a href="rabi.html" class="image-button">
+                <div class="box-img" style="background-image:url('/img/rabi.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="box4 box">
+        <div class="box-content">
+            <h2>Zaid Crops</h2>
+            <a href="zaid.html" class="image-button">
+                <div class="box-img" style="background-image:url('/img/zaid.jpg');"></div>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    // Get the username from sessionStorage
+    const username = sessionStorage.getItem('username');
+    document.getElementById('usernameDisplay').innerText = username ? username : "Guest";
+</script>
+
+</body>
+</html>

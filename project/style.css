@@ -1,0 +1,171 @@
+
+.text-big{
+    font-size: 50px;
+   color: white;
+
+}
+.text-small{
+    font-size: 20px;
+    color:whitesmoke;
+}
+.box-main{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 70%;
+    margin: auto;
+    height: 80%;
+
+}
+.firstSection{
+    background-image:url('https://img.freepik.com/premium-photo/two-farmer-shaking-hands_220873-38902.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+.firstHalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+}
+.header {
+    background-color: rgb(139, 191, 204);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.question {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.category{
+    height: 100vh;
+}
+.options img{
+    height:250px;
+    width: 300px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    
+}
+.options img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.user{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.navbar1{
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 80px;
+}
+.navList1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.navList1 li{
+    list-style: none;
+    padding: 26px 30px;
+    font-weight: 500;
+}
+.navList1 li a{
+    text-decoration: none;
+    color: rgb(32, 29, 29);
+    
+}
+
+.navList1 li a:hover{
+    color: rgb(19, 84, 36);
+}
+.background1{
+    background-color:green;
+    
+}
+/* dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #7ffd45;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nam1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.logo{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nam1{
+    font-family: cursive;
+    font-size:1rem;
+    font-weight: 700;
+    color: black;
+}
+.logo img{
+    width: 40%;
+    background-size :cover;
+    border: 1px solid transparent;
+    border-radius: 50%; 
+   
+}

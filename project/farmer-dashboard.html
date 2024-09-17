@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css
+    ">
+</head>
+<body>
+
+    <!-- Menu Button to toggle sidebar -->
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Sidebar (Initially hidden) -->
+    <div class="sidebar" id="sidebar">
+        <h2>Farmer Dashboard</h2>
+        <ul>
+            <li><a href="farmer-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="#">My Crops</a></li>
+            <li><a href="https://agmarknet.gov.in/">Market Prices</a></li>
+            <li><a href="farmer-profile.html">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="farmer-login.html" onclick="logout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content" id="main-content">
+        <header>
+            <h2>Welcome, <span id="username"></span>!</h2>
+        </header>
+
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Crops Listed</h3>
+                <p>12</p>
+            </div>
+            <div class="card">
+                <h3>Market Price Updates</h3>
+                <p>3 New Updates</p>
+            </div>
+            <div class="card">
+                <h3>Contracts Signed</h3>
+                <p>5 Contracts</p>
+            </div>
+        </div>
+
+        <div class="recent-activities">
+            <h3>Recent Activities</h3>
+            <ul>
+                <li>Added a new crop for sale: Wheat - 2 days ago</li>
+                <li>Signed contract with Buyer XYZ - 3 days ago</li>
+                <li>Checked market price for Rice - 5 days ago</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Display username from sessionStorage
+        document.getElementById('username').innerText = sessionStorage.getItem('username');
+
+        // Toggle sidebar visibility
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px'; // Hide sidebar
+                mainContent.style.marginLeft = '0'; // Reset margin
+            } else {
+                sidebar.style.left = '0'; // Show sidebar
+                mainContent.style.marginLeft = '250px'; // Adjust margin for content
+            }
+        }
+
+        // Logout function
+        function logout() {
+            sessionStorage.clear(); // Clear session data
+            window.location.href = 'profile.html'; // Redirect to login page
+        }
+    </script>
+
+</body>
+</html>

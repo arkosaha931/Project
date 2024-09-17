@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Farming Terms and Conditions</title>
+    <link rel="stylesheet" href="terms.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <div class="terms-box">
+            <p>
+                Welcome to our contract farming agreement. Please read these terms and conditions carefully before entering into any contract farming relationship with us.
+                <br><br>
+                1. Parties: The agreement is between the Farmer (you) and the Consumer (us).
+                <br><br>
+                2. Obligations: Both parties agree to ensure that quality farming produce is delivered as per the agreed timelines.
+                <br><br>
+                3. Payment: Payment will be processed as per market rates, once the produce is delivered and checked for quality.
+                <br><br>
+                4. Termination: Either party can terminate the contract by providing a notice of 30 days.
+                <br><br>
+                5. Disputes: Any disputes will be resolved by the agricultural committee.
+                <br><br>
+                By agreeing to these terms, you confirm your understanding of all the clauses mentioned above.
+            </p>
+        </div>
+        <div class="confirmation">
+            <label for="agree">
+                <input type="checkbox" id="agree" onclick="toggleSubmit()">
+                I agree to the terms and conditions
+            </label>
+            <br><br>
+            <button id="submit-btn" disabled onclick="submitAgreement()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

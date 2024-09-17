@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Login/Register</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <form onsubmit="processLoginRegister(event, 'buyer')">
+        <h2>Buyer Login/Register</h2>
+
+        <!-- Toggle for existing or new user -->
+        <label>
+            <input type="radio" name="userType" value="existing" checked onclick="toggleFields()"> Existing User
+        </label>
+        <label>
+            <input type="radio" name="userType" value="new" onclick="toggleFields()"> New User
+        </label>
+
+        <br><br>
+
+        <!-- Username and Password (Common for both login and registration) -->
+        <label for="buyerUsername">Username</label>
+        <input type="text" id="buyerUsername" name="username" required>
+
+        <label for="buyerPassword">Password</label>
+        <input type="password" id="buyerPassword" name="password" required>
+
+        <!-- These fields will only show for new users -->
+        <div id="newUserFields" style="display: none;">
+            <label for="buyerPhone">Phone Number</label>
+            <input type="tel" id="buyerPhone" name="phone">
+
+        </div>
+
+        <button type="submit">Submit</button>
+        <p id="message"></p>
+    </form>
+
+    <script>
+        // Toggle function to show/hide fields for new users
+        function toggleFields() {
+            const isNewUser = document.querySelector('input[name="userType"]:checked').value === 'new';
+            document.getElementById('newUserFields').style.display = isNewUser ? 'block' : 'none';
+        }
+
+        function processLoginRegister(event, category) {
+            event.preventDefault();
+            const username = document.getElementById(category + 'Username').value;
+            const password = document.getElementById(category + 'Password').value;
+            const isNewUser = document.querySelector('input[name="userType"]:checked').value === 'new';
+
+            const userKey = category + "_" + username; // Add category prefix to user key
+
+            if (isNewUser) {
+                const phone = document.getElementById(category + 'Phone').value;
+
+                // Check if user already exists
+                if (localStorage.getItem(userKey)) {
+                    document.getElementById('message').innerText = "Username already taken. Please choose another.";
+                    return;
+                }
+
+                // Register new user
+                const userData = {
+                    username,
+                    password,
+                    phone,
+                };
+
+                localStorage.setItem(userKey, JSON.stringify(userData));
+                sessionStorage.setItem('username', username); // Save in sessionStorage for greeting
+
+                // Redirect to farmer dashboard
+                window.location.href = category + '-dashboard.html';
+
+            } else {
+                // Existing user login
+                const existingUser = localStorage.getItem(userKey);
+
+                if (existingUser) {
+                    const userDetails = JSON.parse(existingUser);
+
+                    if (userDetails.password === password) {
+                        // Successful login
+                        sessionStorage.setItem('username', username);
+                        window.location.href = category + '-dashboard.html'; // Redirect to Buyer/Farmer dashboard
+                    } else {
+                        document.getElementById('message').innerText = "Incorrect password. Please try again.";
+                    }
+                } else {
+                    document.getElementById('message').innerText = "User does not exist. Please register.";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

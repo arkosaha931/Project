@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 80px;
+}
+.navList{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.navList li{
+    list-style: none;
+    padding: 26px 30px;
+    
+}
+.navList li a{
+    text-decoration: none;
+    color: rgb(32, 29, 29);
+    
+}
+
+.navList li a:hover{
+    color: rgb(19, 84, 36);
+}
+.background{
+    background-color:green;
+    
+}
+/* dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #7ffd45;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nam{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.logo{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nam{
+    font-family: cursive;
+    font-size:1rem;
+    font-weight: 700;
+    color: black;
+}
+.logo img{
+    width: 40%;
+    background-size :cover;
+    border: 1px solid transparent;
+    border-radius: 50%; 
+   
+}
+.contact-us {
+	height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fir{
+    height: 100vh;
+    background-image: url('https://w0.peakpx.com/wallpaper/284/594/HD-wallpaper-field-in-the-heart-land-yield-crop-clouds-farm-season-heartland-land-rows-harvest-cloud-tractor-sky-skies-farmland-heart-nature-heart-land-crops-field.jpg');
+    background-size: cover;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.fir2{
+    padding-left: 14%;
+    padding-top: 12%;
+}
+.by{
+    font-size: 1rem;
+    width: 50%;
+}
+.get-in-touch {
+    height: 210px;
+    width: 35%;
+}
+
+.get-in-touch ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.get-in-touch li {
+	margin-bottom: 10px;
+}
+
+.get-in-touch i {
+	margin-right: 10px;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    width: 500px;
+    margin: 70px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+h3{
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 27px 0 20px 0;
+}
+.social-media{
+    font-size: 1.2rem;
+    height: 210px;
+    width: 32%;
+    padding-left: 15px;
+}
+.details{
+    background-color: #D5ED9F;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    height: 400px;
+    background-color: rgba(187, 182, 182, 0.779);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sec1{
+    height: 400px;
+    width: 35%;
+    
+}
+.logo-ft{
+    height: 80px;
+    width: 18%;
+}
+.logo-ft img{
+    height: 80px;
+    width: 100%;
+}
+.name1{
+    height: 45px;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.part1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+.logo-tag{
+    height: 25px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.part2{
+    height: 180px;
+    margin-top: 100px;
+}
+.location{
+    height: 100px;
+    width: 80%;
+    padding-left: 50px;
+    color: black;
+    font-size: 1rem;
+}
+.num{
+    height: 20px;
+    width: 80%;
+    padding-left: 50px;
+}
+.em{
+    height: 20px;
+    width: 80%;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.sec2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 30px;
+    width: 25%;
+    padding-top: 50px;
+}
+.ft a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
+.sec3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 30px;
+    width: 25%;
+    padding-top: 50px;
+}
+.ac a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    font-weight: 200;
+}

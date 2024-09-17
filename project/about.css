@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 2060px;
+    width: 100%;
+    background-color: blue;
+}
+.panel1{
+    background-color: #ffffff;
+    height:110px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.logo-pn{
+     height:80px;
+     width: 85px;
+     margin-left: 450px; 
+}
+.logo-pn img{
+    height:80px;
+    width: 85px;
+    background-size :cover;
+    
+}
+.logo-nm{
+    font-size:2rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo-tg{
+    font-size:1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dis{
+    height: 550px;
+}
+.dis img{
+   height: 550px;
+   width: 100%;
+   background-size: cover;
+}
+.container{
+    height: 670px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+}
+.space{
+    margin-top: 90px;
+}
+.counter{
+    height: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.text{
+    height: 25px;
+    width: 240px;;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-family: cursive;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.pic2{
+    height: 120px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic2 img{ 
+    height: 120px;
+    width: 120px;
+}
+.box{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}.ol{
+    padding: 0px;
+}
+.co{
+    height: 25px;
+    width: 240px;;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-family: cursive;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.our-mission{
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    display:flex;
+    justify-content: flex-start; 
+}
+.offering{
+    height: 300px;
+    background-color: rgb(125, 201, 232);
+    color:black;
+    display:flex;
+    justify-content: flex-start; 
+}
+.cont{
+    height: 300px;
+    width: 50%;
+    background-color:rgb(244, 226, 195);
+    color:black;
+}
+.o-heading{
+    font-size:3rem;
+    font-weight: 700;
+    font-family: sans-serif ;
+    padding: 20px 0 0 80px;
+}
+.o-body{
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-family:'Lucida Sans';
+    padding: 25px 35px 0 80px;
+}
+.cont1{
+    height: 430px;
+    width: 50%;
+    background-color:rgb(244, 226, 195);
+    color:black;
+}
+.pic3{
+    height: 300px;
+    width: 50%;
+}
+.pic3 img{
+    height: 300px;
+    width: 100%;
+}
+.pic4{
+    height: 430px;
+    width: 50%;
+}
+.pic4 img{
+    height: 430px;
+    width: 100%;
+    background-size: cover;
+}
+.team{
+    height: 600px;
+    background-color: whitesmoke;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heading{
+    height: 30px;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+.bx{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.member-name{
+    height: 20px;
+    width: 60%;
+    text-align: center;
+}
+.intro{
+    height: 100px;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 0 20px 0 60px;
+}
+.footer{
+    height: 400px;
+    background-color: rgba(187, 182, 182, 0.779);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sec1{
+    height: 400px;
+    width: 35%;
+    
+}
+.logo-ft{
+    height: 80px;
+    width: 18%;
+}
+.logo-ft img{
+    height: 80px;
+    width: 100%;
+}
+.name1{
+    height: 45px;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.part1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+.logo-tag{
+    height: 25px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.part2{
+    height: 180px;
+    margin-top: 100px;
+}
+.location{
+    height: 100px;
+    width: 80%;
+    padding-left: 50px;
+    color: black;
+    font-size: 1rem;
+}
+.num{
+    height: 20px;
+    width: 80%;
+    padding-left: 50px;
+}
+.em{
+    height: 20px;
+    width: 80%;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.sec2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 30px;
+    width: 25%;
+    padding-top: 50px;
+}
+.ft a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
+.sec3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 30px;
+    width: 25%;
+    padding-top: 50px;
+}
+.ac a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.navbar1{
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 80px;
+}
+.navList1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.navList1 li{
+    list-style: none;
+    padding: 26px 30px;
+    font-weight: 500;
+}
+.navList1 li a{
+    text-decoration: none;
+    color: rgb(32, 29, 29);
+    
+}
+
+.navList1 li a:hover{
+    color: rgb(19, 84, 36);
+}
+.background1{
+    background-color:green;
+    
+}
+/* dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #7ffd45;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nam1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.logo{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nam1{
+    font-family: cursive;
+    font-size:1rem;
+    font-weight: 700;
+    color: black;
+}
+.logo img{
+    width: 40%;
+    background-size :cover;
+    border: 1px solid transparent;
+    border-radius: 50%; 
+   
+}

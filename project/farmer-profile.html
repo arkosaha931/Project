@@ -1,0 +1,125 @@
+
+@@ -0,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Menu Button to toggle sidebar -->
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Sidebar (Initially hidden) -->
+    <div class="sidebar" id="sidebar">
+        <h2>Farmer Dashboard</h2>
+        <ul>
+            <li><a href="farmer-dashboard.html">Dashboard</a></li>
+            <li><a href="#">My Crops</a></li>
+            <li><a href="https://agmarknet.gov.in/">Market Prices</a></li>
+            <li><a href="farmer-profile.html" class="active">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="farmer-login.html" onclick="logout()">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <header>
+            <h2>Welcome, <span id="username"></span>!</h2>
+
+            <div class="container">
+                <h2>Farmer Profile</h2>
+
+                <!-- Form to view/edit profile details -->
+                <form id="profileForm" onsubmit="updateProfile(event)">
+
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="aadhar">Aadhar Card</label>
+                    <input type="number" id="aadhar" name="aadhar">
+
+                    <label for="pan">PAN Card</label>
+                    <input type="text" id="pan" name="pan">
+
+                    <button type="submit">Update Profile</button>
+                    <p id="message"></p>
+                </form>
+            </div>
+
+
+
+                <script>
+                     document.getElementById('username').innerText = sessionStorage.getItem('username');
+                    // Load profile data when the page is opened
+                    window.onload = function() {
+                        const username = sessionStorage.getItem('username');
+                        console.log(username);
+                        if (username) {
+                            const userKey = 'farmer_' + username;
+                            const userData = JSON.parse(localStorage.getItem(userKey));
+
+                            // Populate form fields with user data
+                            //document.getElementById('username').value = userData.username;
+                            document.getElementById('password').value = userData.password;
+                            document.getElementById('phone').value = userData.phone;
+                            document.getElementById('aadhar').value = userData.aadhar;
+                            document.getElementById('pan').value = userData.pan;
+                        } else {
+                            document.getElementById('message').innerText = "User not logged in.";
+                        }
+                    };
+
+                    // Update profile details and save to localStorage
+                    function updateProfile(event) {
+                        event.preventDefault();
+
+                        const username = sessionStorage.getItem('username');
+                        const userKey = 'farmer_' + username;
+
+                        // Get updated values from the form
+                        const updatedPassword = document.getElementById('password').value;
+                        const updatedPhone = document.getElementById('phone').value;
+                        const updatedAadhar = document.getElementById('aadhar').value;
+                        const updatedPAN = document.getElementById('pan').value;
+
+                        // Fetch the existing user data from localStorage
+                        const userData = JSON.parse(localStorage.getItem(userKey));
+
+                        // Update the user data with new values
+                        userData.password = updatedPassword;
+                        userData.phone = updatedPhone;
+                        userData.aadhar = updatedAadhar;
+                        userData.pan = updatedPAN;
+
+                        // Save the updated data back to localStorage
+                        localStorage.setItem(userKey, JSON.stringify(userData));
+
+                        // Display success message
+                        document.getElementById('message').innerText = "Profile updated successfully!";
+                    }
+                    function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px'; // Hide sidebar
+                mainContent.style.marginLeft = '0'; // Reset margin
+            } else {
+                sidebar.style.left = '0'; // Show sidebar
+                mainContent.style.marginLeft = '250px'; // Adjust margin for content
+            }
+        }
+                </script>
+
+            </body>
+            </html>
+
+        </body>
+        </html>
